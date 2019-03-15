@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: wheat url("img/tile.jpg") repeat;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+}
+
+header {
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+section {
+    margin: 5px auto;
+    padding: 5px;
+}
+
+form {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    background: rgb(141, 196, 228) url("img/formbg.jpg") repeat-y;
+}
+
+form p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.info p {
+    position: relative;
+    display: inline-block;
+    margin: 10px auto 0;
+}
+
+textarea {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 24px;
+    width: 450px;
+    height: 100px;
+    resize: none;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+input {
+    font-size: 20px;
+    text-align: center;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+form p:last-child {
+    text-align: right;
+    margin: 0 auto;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px 0;
+    color: rgb(84, 62, 184);
+    font-weight: 700;
+    border: 2px solid rgb(84, 62, 184);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#noteList {
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#noteList li {
+    position: relative;
+    background: transparent url("img/notebg.png") no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 0 5px 0 0;
+    padding: 25px 30px 5px 10px;
+    opacity: 1;
+}
+
+#noteList li p:first-child {
+    display: none;
+    cursor: pointer;
+}
+
+#noteList li:hover p:first-child {
+    display: block;
+}
+
+.btnRemove {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 20px;
+    right: 25px;
+    font-size: 10px;
+    padding: 2px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.clipTask {
+    margin: 12px auto 5px;
+    height: 160px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.clipDate,
+.clipTime {
+    margin: 0 auto;
+}
+
+.errDate,
+.errTime {
+    display: none;
+    position: absolute;
+    width: 200px;
+    color: red;
+    font-size: 14px;
+    left: 0px;
+}
+
+.err {
+    border: 1px solid red;
+}
+
+/* fade in effect with transition */
+.fadeIn {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* fade out effect with transition */
+.fadeOut {
+    opacity: 0;
+    animation-name: fadeOutOpacity;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

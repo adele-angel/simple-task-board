@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLE TASK BOARD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/title.png" alt="My Task Board" title="My Task Board" />
+        </header>
+        <section id="sec1">
+            <form name="form">
+                <div class="info">
+                    <p>
+                        <label>Date:</label>
+                        <input type="text" name="txtDate" placeholder="dd/mm/yyyy" required>
+                        <span class="errDate">Enter a valid date DD/MM/YYYY</span>
+                    </p>
+                    <p>
+                        <label>Time:</label>
+                        <input type="text" name="txtTime" placeholder="hh:mm" required>
+                        <span class="errTime">Enter a valid time MM:HH</span>
+                    </p>
+                </div>
+
+                <p>
+                    <textarea name="txtTask" placeholder="Write text here..." required></textarea>
+                </p>
+                <p>
+                    <button type="submit" name="btnAdd">Add Note</button>
+                </p>
+            </form>
+        </section>
+        <section id="sec2">
+            <ul id="noteList"></ul>
+        </section>
+
+</body>
+
+</html>
